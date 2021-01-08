@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { getAllStarships } from "../../services/sw-api";
 import { Link } from "react-router-dom";
 
-class StarshipList extends Component {
+class StarShipList extends Component {
   state = { results: [] };
 
   async componentDidMount() {
@@ -35,4 +35,4 @@ class StarshipList extends Component {
   }
 }
 
-export default StarshipList;
+export default StarShipList;

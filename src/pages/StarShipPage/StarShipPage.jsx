@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { getStarshipDetails } from "../../services/sw-api";
+import { getShipDetails } from "../../services/sw-api";
 import { Link } from "react-router-dom";
 
-class StarshipDetails extends Component {
+class StarShipDetails extends Component {
   state = {
     url: this.props.location.state.ship.url,
     shipDetails: {},
@@ -10,7 +10,7 @@ class StarshipDetails extends Component {
 
   async componentDidMount() {
     console.log(`URL == ${this.state.url}`);
-    const shipDetails = await getStarshipDetails(this.state.url);
+    const shipDetails = await getShipDetails(this.state.url);
     this.setState({ shipDetails });
   }
 
@@ -39,4 +39,4 @@ class StarshipDetails extends Component {
   }
 }
 
-export default StarshipDetails;
+export default StarShipDetails;
