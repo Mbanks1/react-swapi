@@ -1,9 +1,11 @@
-const baseUrl = "https://swapi.dev"
+const baseUrl = "https://swapi.dev/api"
 
-export function getAllStarShips() {
-    return fetch (`${baseUrl}/api/starships`)
+export function getAllStarships() {
+    return fetch(`${baseUrl}/starships`)
     .then(res => res.json())
-    
-  }
+}
 
-  console.log(getAllStarShips());
+export function getShipDetails(apiUrl){
+    return fetch(`${apiUrl}`)
+    .then(res =>  res.json())
+}

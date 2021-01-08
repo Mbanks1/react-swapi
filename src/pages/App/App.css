@@ -1,0 +1,95 @@
+body{
+    background: url(https://static4.depositphotos.com/1000263/342/v/380/depositphotos_3420335-stock-illustration-night-sky-black-with-stars.jpg);
+  
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  #shipDiv {
+    background-color: rgba(54, 78, 79);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #shipDiv a {
+    color: white;
+  }
+  
+  header {
+    background-color: rgba(41, 44, 51);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ship-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: clamp(400px, 80vw, 1200px);
+    margin: auto;
+    justify-content: center;
+  }
+  
+  .shipDetails {
+    display: flex;
+    background-color: rgba(54, 78, 79);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7.5px;
+    flex-direction: column;
+    padding: 35px;
+    margin: 0 auto;
+  
+  }
+  
+  .shipDetails a {
+    color: white;
+  }
+  
+  .ship-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
